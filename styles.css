@@ -1,26 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap");
 
-@keyframes typing {
-  from {
-    width: 0;
-    border-right: 2px solid white;
-  }
-  to {
-    width: 100%;
-    border-right: none;
-  }
-}
-
-@keyframes blink {
-  0%,
-  100% {
-    border-color: transparent;
-  }
-  50% {
-    border-color: white;
-  }
-}
-
 * {
   padding: 0;
   margin: 0;
@@ -262,6 +241,27 @@ body {
   }
   100% {
     color: violet;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+    border-right: 2px solid white;
+  }
+  to {
+    width: 100%;
+    border-right: none;
+  }
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
   }
 }
 
