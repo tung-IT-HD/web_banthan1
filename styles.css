@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap");
-
 * {
   padding: 0;
   margin: 0;
@@ -17,6 +15,7 @@ body {
   color: #333;
   font-family: "Signika Negative", sans-serif;
   min-height: 100vh;
+  text-align: center;
 }
 
 .tieude {
@@ -198,44 +197,42 @@ body {
   animation: jump 2s infinite;
 }
 
-.container-anh {
-  display: block;
-  margin: 40px 40px;
-  margin-top: 100px;
-  padding: 50px;
-  text-align: center;
+.text-img {
+  display: flex;
+  width: 300px;
+  height: 60px;
+  margin: 0 auto;
+  margin-top: 150px;
+  margin-bottom: 50px;
+  border-radius: 20px;
+  border: 2px solid #145958;
+  background: radial-gradient(circle, rgb(230, 236, 237), rgb(178, 186, 189));
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
 }
 
 .text-img h3 {
-  position: relative;
-  display: inline-block;
-  padding: 10px 28px;
   font-size: 24px;
-  color: #471d6a;
-  border-radius: 16px;
-  z-index: 1;
-  overflow: hidden;
-  font-size: 24px;
-  color: transparent;
+  background: linear-gradient(to right, blue, #70328d, violet);
+  background-size: 200% 100%;
   background-clip: text;
   -webkit-background-clip: text;
-  background-image: linear-gradient(to right, red, blue, indigo, violet);
-  margin-bottom: 20px;
+  color: transparent;
 }
 
-.text-img h3::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 16px;
-  padding: 2px;
-  background: linear-gradient(270deg, #7ba3da, #a1c4fd, #7ba3da, #fff, #7ba3da);
-  background-size: 400% 400%;
-  z-index: -1;
-  animation: border-move 3s linear infinite;
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
+.container-anh img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.container-anh {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }
 
 /* nhảy */
@@ -248,22 +245,12 @@ body {
     transform: translateY(-20px);
   }
 }
-/* di chuyển viền */
-@keyframes border-move {
-  0% {
-    background-position: 0% 50%;
-  }
-  100% {
-    background-position: 100% 50%;
-  }
-}
-
 /* gạch chân chạy */
 @keyframes underline-move {
   0% {
     background-position-x: 0;
   }
-  0 100% {
+  100% {
     background-position-x: 40px;
   }
 }
