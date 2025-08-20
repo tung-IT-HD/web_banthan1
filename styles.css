@@ -280,11 +280,11 @@ body {
 }
 
 .anh:hover img {
-  transform: scale(1.1); /* phóng to ảnh */
+  transform: scale(1.1);
 }
 
 .anh:hover .text-anh {
-  opacity: 1; /* hiện chữ */
+  opacity: 1;
 }
 
 /* nhảy */
